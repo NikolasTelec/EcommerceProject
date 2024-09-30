@@ -1,0 +1,176 @@
+.register {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    z-index: 2;
+}
+
+.register-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 700px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.register-table span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.register-errorSpan {
+    font-size: 14px;
+    margin-left: 5px;
+    color: red;
+}
+
+.register-table-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.register-table-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-table-wrapper-container {
+    width: 45%;
+}
+
+.register-table-wrapper-container-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-table-h1 {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 15px 0;
+    font-size: 18px;
+}
+
+.register-table-input {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #A4A4A4;
+}
+.register-table-input input {
+    all: unset;
+    height: 30px;
+    width: 100%;
+    padding: 5px 0 0 10px;
+}
+.register-table-input svg {
+    font-size: 24px;
+    color: #A4A4A4;
+    margin: 5px 0 0 5px;
+}
+
+.register-table-input-name {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #A4A4A4;
+    width: 45%;
+}
+.register-table-input-name input {
+    all: unset;
+    height: 30px;
+    width: 100%;
+    padding: 5px 0 0 10px;
+}
+.register-table-input-name svg {
+    font-size: 24px;
+    color: #A4A4A4;
+    margin: 5px 0 0 5px;
+}
+
+.register-table-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.register-table-forgot p{
+    margin: 0;
+    font-size: 13px;
+    color: #A4A4A4;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.register-table-register button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: #4A90E2;
+    cursor: pointer;
+}
+.register-table-register button:hover{
+    background-color: #62A9F0;
+}
+
+.register-table-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-table-login button {
+    all: unset;
+    font-size: 14px;
+    color: #4A90E2;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .register-table {
+        justify-content: center;
+        height: 100svh;
+        width: 100svw;
+        border-radius: 0px;
+        padding: 0 30px;
+    }
+
+    .register-table-wrapper {
+        flex-direction: column;
+        align-items: center;
+        max-height: 60svh;
+        overflow: auto;
+    }
+
+    .register-table-wrapper-container {
+        width: 100%;
+    }
+
+    .register-table-login button {
+        margin-bottom: 50px;
+    }
+
+    .register-table-h1 h1 {
+        margin: 0;
+    }
+}

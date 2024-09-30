@@ -1,0 +1,127 @@
+.loginRegister {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    z-index: 2;
+}
+
+.loginRegister-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 500px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.loginRegister-table span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.loginRegister-errorSpan {
+    font-size: 14px;
+    margin-left: 5px;
+    color: red;
+}
+
+.loginRegister-table-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.loginRegister-table-h1 {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 15px 0;
+    font-size: 18px;
+}
+
+.loginRegister-table-input {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #A4A4A4;
+}
+.loginRegister-table-input input {
+    all: unset;
+    height: 30px;
+    width: 100%;
+    padding: 5px 0 0 10px;
+}
+.loginRegister-table-input svg {
+    font-size: 24px;
+    color: #A4A4A4;
+    margin: 5px 0 0 5px;
+}
+
+.loginRegister-table-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loginRegister-table-forgot p{
+    margin: 0;
+    font-size: 13px;
+    color: #A4A4A4;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.loginRegister-table-login button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 50px 0 20px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: #4A90E2;
+    cursor: pointer;
+}
+.loginRegister-table-login button:hover{
+    background-color: #62A9F0;
+}
+
+.loginRegister-table-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginRegister-table-register button {
+    all: unset;
+    font-size: 14px;
+    color: #4A90E2;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .loginRegister-table {
+        height: 100svh;
+        width: 100svw;
+        justify-content: center;
+        border-radius: 0px;
+        padding: 0 30px;
+    }
+
+    .loginRegister-table-register button {
+        margin-bottom: 80px;
+    }
+
+}
