@@ -20,14 +20,15 @@ const OrderList = () => {
     setInput(e.target.value); // Update the state with the new input value
   };
 
+  // hledání objednávky
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`/orders/search/${input}`); // Make an API call to search for the order
+      const response = await axios.get(`/orders/search/${input}`);
       if (response.data.success) {
         setNoOrders(false)
-        setOrders([response.data.data]); // Set orders state with the specific order found
+        setOrders([response.data.data]);
       } else {
-        setNoOrders(true); // Clear orders if no match found
+        setNoOrders(true);
       }
     } catch (error) {
       setNoOrders(true);

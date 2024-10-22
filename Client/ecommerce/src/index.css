@@ -16,7 +16,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* better looking scroll :) */
+/* better looking scroll */
 ::-webkit-scrollbar {
   width: 20px;
 }

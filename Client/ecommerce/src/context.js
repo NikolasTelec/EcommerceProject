@@ -58,7 +58,7 @@ const ContextProvider = ({ children }) => {
     return () => {
       window.removeEventListener('storage', handleStorageChange);
     };
-  }, []); // Empty dependency array ensures this effect runs once on mount
+  }, []); 
 
   // fetch košíku po přihlášení
   useEffect(() => {

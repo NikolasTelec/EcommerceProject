@@ -342,43 +342,6 @@ app.get('/orders/search/:orderId', async (req, res) => {
 });
 
 
-
-//read (GET)
-//http://localhost:8080
-app.get("/", async (req, res) => {
-  const data = await userModel.find({})
-  res.json({ success: true, data })
-})
-
-//create (POST)
-//http://localhost:8080/create
-app.post("/create", async (req, res) => {
-  console.log(req.body);
-  const data = new userModel(req.body)
-  await data.save()
-  res.send({ success: true, message: "data create successfully", data })
-})
-
-//update (PUT)
-//http://localhost:8080/update
-app.put("/update", async (req, res) => {
-  console.log(req.body);
-  const { _id, ...rest } = req.body
-  console.log(rest);
-  const data = await userModel.updateOne({ _id: _id }, rest)
-  res.send({ success: true, message: "data update successfully", data })
-})
-
-//delete (DELETE)
-//http://localhost:8080/delete/:id
-app.delete("/delete/:id", async (req, res) => {
-  const id = req.params.id
-  console.log(id);
-  const data = await userModel.deleteOne({ _id: id })
-  res.send({ success: true, message: "data delete successfully", data })
-})
-
-
 mongoose.connect("mongodb+srv://admin:admin@cluster0.vmjzy.mongodb.net/Ecommerce?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log('MongoDB Atlas Connected')
